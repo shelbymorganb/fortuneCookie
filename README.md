@@ -1,1 +1,3 @@
 # fortuneCookie
+
+Fortune cookie generator. 
