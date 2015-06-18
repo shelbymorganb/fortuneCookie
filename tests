@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<title>Fortune Cookie Tests</title>
+
+	</head>
+
+	<body>
+
+
+		<script type="text/javascript"> // Unsure if I need to include script type for this?
+
+			// testOne
+			// Each array contains data corresponding to one property of a fortune cookie
+
+				// 'FORTUNES'
+
+							// Array containing data for 'fortunes' 
+
+										var fortune = ['Your life is a dashing and bold adventure', 'Many successes will accompany you this year', 'Good luck is the result of good planning'];
+
+							// Function to select and return random fortune
+
+										var newFortune = function () {
+											var todaysFortune = fortune[Math.floor(Math.random() fortune.length)];
+											return todaysFortune;
+										};
+
+
+				// 'LEARN CHINESE'
+
+						// Array containing data for 'learnChinese'
+
+									var learnChinese = ['shēng cài 生菜' + ' ' + 'Lettuce', 'yòu zi 柚子' + ' ' + 'Grapefruit', 'qié zi 茄子' + ' ' + 'Eggplant'];
+							
+						// Function to select and return random 'learnChinese'
+
+									var newLearnChinese = function () {
+										var todaysLearnChinese = learnChinese[Math.floor(Math.random() learnChinese.length)];
+										return todaysLearnChinese;
+									};
+
+						
+				// 'LUCKY NUMBERS'
+
+						// Array containing data for 'luckyNumbers'
+
+									var luckyNumbers = ['18, 16, 43, 41, 35, 36', '2, 39, 5, 38, 16, 29', '30, 1, 46, 14, 44, 26'];
+
+						// Function to select and return random 'luckyNumbers'
+
+									var newLuckyNumbers = function () {
+										var todaysLuckyNumbers = luckyNumbers[Math.floor(Math.random() luckyNumbers.length)];
+										return todaysLuckyNumbers;
+									};
+
+					console.log(todaysFortune);
+					console.log(todaysLearnChinese);
+					console.log(todaysLuckyNumbers);
+
+			// testTwo
+			// Each object corresponds to one property of a fortune cookie
+					var fortune = new Object();
+					    fortune.one = 'Your life is a dashing and bold adventure';
+					    fortune.two = 'Many successes will accompany you this year';
+					    fortune.three = 'Good luck is the result of good planning';
+					    
+					var learnChinese = new Object();
+					    learnChinese.one = 'shēng cài 生菜' + ' ' + 'Lettuce';
+					    learnChinese.two = 'yòu zi 柚子' + ' ' + 'Grapefruit';
+					    learnChinese.three = 'qié zi 茄子' + ' ' + 'Eggplant';
+					    
+					var luckyNumbers = new Object();
+					    luckyNumbers.one = '18, 16, 43, 41, 35, 36';
+					    luckyNumbers.two = '2, 39, 5, 38, 16, 29';
+					    luckyNumbers.three = '30, 1, 46, 14, 44, 26';
+
+					console.log();
+
+
+			// testThree
+			// Each object corresponds to a separate fortune cookie
+					var fortune1 = new Object();
+					    fortune1.fortune = 'Your life is a dashing and bold adventure';
+					    fortune1.learnChinese = 'shēng cài 生菜';
+					    fortune1.learnTranslation = 'Lettuce';
+					    fortune1.luckyNumbers = '18, 16, 43, 41, 35, 36';
+
+
+					var fortune2 = new Object();
+					    fortune2.fortune = 'Many successes will accompany you this year';
+					    fortune2.learnChinese = 'yòu zi 柚子';
+					    fortune2.learnTranslation = 'Grapefruit';
+					    fortune2.luckyNumbers = '2, 39, 5, 38, 16, 29';
+					    
+
+					var fortune3 = new Object();
+					    fortune3.fortune = 'Good luck is the result of good planning';
+					    fortune3.learnChinese = 'qié zi 茄子';
+					    fortune3.learnTranslation = 'Eggplant';
+					    fortune3.luckyNumbers = '30, 1, 46, 14, 44, 26';
+
+					console.log(fortune3.fortune);
+					console.log('Learn Chinese: ' + fortune3.learnTranslation + ' - ' + fortune3.learnChinese);
+					console.log('Lucky Numbers:', fortune3.luckyNumbers);
+
+		</script>
+	</body>
+
+</html>
